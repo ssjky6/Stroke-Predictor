@@ -22,7 +22,7 @@ st.sidebar.markdown("""
 uploaded_file = st.sidebar.file_uploader("Upload your input CSV file", type=["csv"])
 if uploaded_file is not None:
     df = pd.read_csv(uploaded_file)
-    #df.drop(df.columns[0], axis = 1, inplace = True)
+    df.drop(df.columns[10], axis = 1, inplace = True)
 else:
     def user_input_features():
         gender = st.sidebar.selectbox('Gender',('Male','Female','Other'))
