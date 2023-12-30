@@ -8,7 +8,7 @@ from sklearn.ensemble import RandomForestClassifier
 
 st.write("""
 # Stroke Prediction App
-This Web App is used to predict whether you likely to get stroke based on the input parameters like gender, age, various diseases, and smoking status. You can find the entire source code for the models and web deployment [here](https://github.com/BugBear646/Stroke-Predictor/)
+This Web App is used to predict whether you likely to get stroke based on the input parameters like gender, age, various diseases, and smoking status. You can find the entire source code for the models and web deployment [here](https://github.com/ssjky6/Stroke-Predictor)
 
 """)
 
