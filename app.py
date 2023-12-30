@@ -22,7 +22,7 @@ st.sidebar.markdown("""
 uploaded_file = st.sidebar.file_uploader("Upload your input CSV file", type=["csv"])
 if uploaded_file is not None:
     df = pd.read_csv(uploaded_file)
-    df.drop(df.columns[0], axis = 1, inplace = True)
+    #df.drop(df.columns[0], axis = 1, inplace = True)
 else:
     def user_input_features():
         gender = st.sidebar.selectbox('Gender',('Male','Female','Other'))
@@ -56,7 +56,7 @@ else:
 # Encoding of ordinal features
 #In this analysis, since we are taking the data as a whole, candidate_id is not required.
 
-df.drop('id', axis = 1, inplace = True)
+df.drop(df.columns[0], axis = 1, inplace = True)
 
 dict1 = {'Male' : 0, 'Female' : 1, 'Other' : 2}
 df['gender'] = [dict1[item] for item in df['gender']]
