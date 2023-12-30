@@ -15,7 +15,7 @@ This Web App is used to predict whether you are likely to get a stroke based on 
 st.sidebar.header('User Input Features')
 
 st.sidebar.markdown("""
-[Example CSV input file](https://github.com/ssjky6/Stroke-Predictor/main/Data/example.csv)
+[Example CSV input file](https://github.com/ssjky6/Stroke-Predictor/blob/main/Data/example.csv)
 """)
 
 # Collects user input features into dataframe
